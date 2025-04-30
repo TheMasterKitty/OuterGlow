@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Fabric.OuterGlow.client.iml" filepath="$PROJECT_DIR$/.idea/modules/Fabric.OuterGlow.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Fabric.OuterGlow.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Fabric.OuterGlow.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Fabric.OuterGlow.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Fabric.OuterGlow.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OuterGlow.client.iml" filepath="$PROJECT_DIR$/.idea/modules/OuterGlow.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OuterGlow.main.iml" filepath="$PROJECT_DIR$/.idea/modules/OuterGlow.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OuterGlow.test.iml" filepath="$PROJECT_DIR$/.idea/modules/OuterGlow.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/themasterkitty.outerglow.OuterGlow.client.iml" filepath="$PROJECT_DIR$/.idea/modules/themasterkitty.outerglow.OuterGlow.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/themasterkitty.outerglow.OuterGlow.main.iml" filepath="$PROJECT_DIR$/.idea/modules/themasterkitty.outerglow.OuterGlow.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/themasterkitty.outerglow.OuterGlow.test.iml" filepath="$PROJECT_DIR$/.idea/modules/themasterkitty.outerglow.OuterGlow.test.iml" />
+    </modules>
+  </component>
+</project>

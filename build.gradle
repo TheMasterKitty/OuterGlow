@@ -1,0 +1,68 @@
+plugins {
+	id 'fabric-loom' version '1.10-SNAPSHOT'
+	id 'maven-publish'
+}
+
+group = project.maven_group
+
+base {
+	archivesName = project.archives_base_name
+}
+
+repositories {
+	mavenCentral()
+	maven {
+		name = "Fabric"
+		url = "https://maven.fabricmc.net/"
+	}
+	maven {
+		url = "https://maven.terraformersmc.com/releases/"
+	}
+    maven {
+        name = "Terraformers"
+        url = "https://maven.terraformersmc.com/"
+    }
+    maven {
+        url 'https://maven.isxander.dev/releases'
+    }
+}
+
+loom {
+	splitEnvironmentSourceSets()
+
+	mods {
+		"outerglow" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
+
+}
+
+dependencies {
+	modApi "com.terraformersmc:modmenu:11.0.1"
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    modImplementation "dev.isxander:yet-another-config-lib:3.6.1+1.21-fabric"
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 17
+}
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
+}
+
+publishing {
+	publications {
+		create("mavenJava", MavenPublication) {
+			artifactId = project.archives_base_name
+			from components.java
+		}
+	}
+}

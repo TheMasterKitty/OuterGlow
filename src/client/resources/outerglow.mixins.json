@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "themasterkitty.outerglow.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"client": [
+		"PlayerListHudMixinNoLF",
+		"PlayerSkinDrawerMixin1202",
+		"PlayerSkinDrawerMixin1211",
+		"PlayerSkinDrawerMixin1213"
+	],
+	"plugin": "themasterkitty.outerglow.IMixinPlugin",
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
