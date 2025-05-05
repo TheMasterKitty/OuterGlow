@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "themasterkitty/outerglow/mixin/PlayerListHudMixinNoLF": {
+      "Lnet/minecraft/client/gui/DrawContext;drawTextWithShadow(Lnet/minecraft/client/font/TextRenderer;Lnet/minecraft/text/Text;III)I": "Lnet/minecraft/class_332;method_27535(Lnet/minecraft/class_327;Lnet/minecraft/class_2561;III)I",
+      "render": "Lnet/minecraft/class_355;method_1919(Lnet/minecraft/class_332;ILnet/minecraft/class_269;Lnet/minecraft/class_266;)V"
+    },
+    "themasterkitty/outerglow/mixin/PlayerSkinDrawerMixin1213": {
+      "draw(Lnet/minecraft/client/gui/DrawContext;Lnet/minecraft/util/Identifier;IIIZZI)V": "Lnet/minecraft/class_7532;method_44445(Lnet/minecraft/class_332;Lnet/minecraft/class_2960;IIIZZI)V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "themasterkitty/outerglow/mixin/PlayerListHudMixinNoLF": {
+        "Lnet/minecraft/client/gui/DrawContext;drawTextWithShadow(Lnet/minecraft/client/font/TextRenderer;Lnet/minecraft/text/Text;III)I": "Lnet/minecraft/class_332;method_27535(Lnet/minecraft/class_327;Lnet/minecraft/class_2561;III)I",
+        "render": "Lnet/minecraft/class_355;method_1919(Lnet/minecraft/class_332;ILnet/minecraft/class_269;Lnet/minecraft/class_266;)V"
+      },
+      "themasterkitty/outerglow/mixin/PlayerSkinDrawerMixin1213": {
+        "draw(Lnet/minecraft/client/gui/DrawContext;Lnet/minecraft/util/Identifier;IIIZZI)V": "Lnet/minecraft/class_7532;method_44445(Lnet/minecraft/class_332;Lnet/minecraft/class_2960;IIIZZI)V"
+      }
+    }
+  }
+}

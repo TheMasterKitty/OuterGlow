@@ -22,6 +22,8 @@ public class Main implements ModMenuApi, ClientModInitializer {
     public static boolean enabled = true;
     @SerialEntry
     public static Color color = new Color(0xFFFFFF);
+    @SerialEntry
+    public static boolean legitmode = true;
 
     @Override
     public void onInitializeClient() {
@@ -53,6 +55,12 @@ public class Main implements ModMenuApi, ClientModInitializer {
                                                 .description(OptionDescription.of(Text.literal("Change the color shown around players' heads")))
                                                 .binding(color, () -> color, value -> color = value)
                                                 .customController(opt -> new ColorController(opt, true))
+                                                .build())
+                                        .option(Option.<Boolean>createBuilder()
+                                                .name(Text.literal("Legit Mode"))
+                                                .description(OptionDescription.of(Text.literal("Hides outline if the player has their 2nd layer off")))
+                                                .binding(true, () -> legitmode, value -> legitmode = value)
+                                                .customController(opt -> new BooleanController(opt, true))
                                                 .build())
                                         .build())
                 )).generateScreen(parent);

@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "outerglow",
+	"version": "ultra",
+	"name": "OuterGlow",
+	"description": "When you can see someone's outer layer in TAB, they have an outline around their player head",
+	"authors": [
+	  "TheMasterKitty"
+	],
+  "icon": "assets/outerglow/icon.png",
+  "environment": "client",
+	"entrypoints": {
+	  "client": [
+		"themasterkitty.outerglow.Main"
+	  ],
+	  "modmenu": [
+		"themasterkitty.outerglow.Main"
+	  ]
+	},
+	"mixins": [
+	  {
+		"config": "outerglow.mixins.json",
+		"environment": "client"
+	  }
+	],
+	"depends": {
+	  "fabricloader": "*",
+	  "minecraft": [ "1.20.x", "1.21.x" ],
+	  "java": ">=17",
+	  "yet_another_config_lib_v3": ">=3.6.1+1.21-fabric"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://discord.gg/sCVM6h2By4"
+			}
+		}
+	}
+}

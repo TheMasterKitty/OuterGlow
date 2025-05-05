@@ -29,7 +29,7 @@ public class PlayerSkinDrawerMixin1213 {
         if (MinecraftClient.getInstance().world == null) return false;
 
         return MinecraftClient.getInstance().world.getPlayers().stream()
-                .filter(player -> player.isPartVisible(PlayerModelPart.HAT))
+                .filter(player -> !Main.legitmode || player.isPartVisible(PlayerModelPart.HAT))
                 .map(AbstractClientPlayerEntity::getSkinTextures)
                 .map(SkinTextures::texture)
                 .map(Identifier::getPath)
